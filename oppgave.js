@@ -59,7 +59,95 @@ function storste(tall) {
 function bareKuldegrader(tall) {
 
 }
-  
+
+const runder = [120, 85, 140, 95, 110];
+
+//oppgave 10//
+function lagGamertag(navn, tall) {
+  return navn + tall
+}
+
+//oppgave 11//
+function erGammelNok(alder, grense){
+  return alder >= grense
+}
+
+//Oppgave 12//
+function billettpris(erVG1) {
+  if (erVG1) {
+    return 100
+  }
+  return 150
+}
+
+//Oppgave 15//
+// Aldersgrenser i turneringene. Slik henter du en verdi: aldersgrenser["GTA 6"] -> 18
+const aldersgrenser = {
+  "GTA 6": 18,
+  "CS2": 18,
+  "Fortnite": 12,
+  "WoW Forever": 12,
+  "Minecraft": 7,
+};
+
+// Påmeldte deltakere. Slik henter du en verdi: deltakere[0].navn -> "Ola"
+const deltakere = [
+  { navn: "Ola", alder: 16, spill: "Fortnite", vg1: true },
+  { navn: "Kari", alder: 18, spill: "GTA 6", vg1: false },
+  { navn: "Ali", alder: 17, spill: "GTA 6", vg1: true },
+  { navn: "Emma", alder: 15, spill: "Minecraft", vg1: false },
+  { navn: "Jonas", alder: 19, spill: "CS2", vg1: true },
+  { navn: "Sara", alder: 16, spill: "WoW Forever", vg1: true },
+];
+
+// Resultater fra finalen
+const resultater = [
+  { navn: "Ola", poeng: 340 },
+  { navn: "Kari", poeng: 520 },
+  { navn: "Ali", poeng: 410 },
+  { navn: "Emma", poeng: 290 },
+  { navn: "Jonas", poeng: 480 },
+];
+
+function kanDelta(alder, spill) {
+  const aldersgrense = aldersgrenser[spill];
+  return erGammelNok(alder, aldersgrense)
+}
+
+//oppgave 16//
+function totalInntekt(deltakere) {
+  let total = 0;
+
+  for (let i = 0; i < deltakere.length; i++) {
+    total += billettpris(deltakere[i].vg1);
+  }
+  return total;
+}
+
+// #####################################################
+// EGENVURDERING
+// #####################################################
+//
+// Skriv en kort egenvurdering av arbeidet ditt. Skriv rett etter kolonet.
+// 
+
+// Dette fikk jeg godt til:
+
+// Dette var vanskelig:
+
+// Dette vil jeg øve mer på:
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // Fikset med KI, kopiert fra Benjamin
