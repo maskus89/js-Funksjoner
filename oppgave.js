@@ -129,14 +129,14 @@ function totalInntekt(deltakere) {
 // #####################################################
 //
 // Skriv en kort egenvurdering av arbeidet ditt. Skriv rett etter kolonet.
-// 
+// Jeg synes jeg har fått til oppgaven greit. jeg har hoppet over noen fordi jeg ikke skjønte. 
 
 // Dette fikk jeg godt til:
-
+// for løkker og if
 // Dette var vanskelig:
-
+// array og de Blizzard oppgavene skjønte jeg bare ikke
 // Dette vil jeg øve mer på:
-
+//arrays og if, else
 
 
 
